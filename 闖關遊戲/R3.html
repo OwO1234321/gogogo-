@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<title>第二關</title>
+<meta charset="utf-8">
+<style>
+#gamename{
+    background-size: 100px 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.start{
+    font-style: normal;
+    
+    font-family: "Times New Roman","標楷體";
+    
+
+}
+.button {
+    width: 105px;
+    height:27px;
+    padding-left:3px;
+    border:0.5px rgb(0, 0, 0) solid;
+    margin-left:122px;
+    margin-top:112px;
+    background-position: center;
+    font-size:20px;
+    background-color: rgb(184, 184, 184);
+    cursor: pointer;
+}
+.button:hover {
+    background-color: aliceblue;
+}
+
+</style>
+<script>
+var clock = setTimeout(printword ,10000);
+function printword(){
+    window.location.href = "loss 01.html";
+}
+function winf(){
+    window.location.href = "R4.html";
+}
+function win1(){
+    x.style.display="none";
+    b.style.display="none";
+    c.style.display="none";
+    f.style.display="block";
+    d.style.display="block";
+    e.style.display="block";
+}
+function win2(){
+    x.style.display="none";
+    b.style.display="none";
+    c.style.display="none";
+    f.style.display="none";
+    d.style.display="none";
+    e.style.display="none";
+    x0.style.display="block";
+    x1.style.display="block";
+    y1.style.display="block";
+    z1.style.display="block";
+}
+function win3(){
+    x.style.display="none";
+    b.style.display="none";
+    c.style.display="none";
+    f.style.display="none";
+    d.style.display="none";
+    e.style.display="none";
+    x0.style.display="none";
+    x1.style.display="none";
+    y1.style.display="none";
+    z1.style.display="none";
+    xx0.style.display="block";
+    xx2.style.display="block";
+    xx3.style.display="block";
+    setTimeout("win30()",1000 );
+}
+function win30(){
+    xx1.style.display="block";    
+}
+function win4(){
+
+    xx1.style.display="none"; 
+    xxx1.style.display="block"; 
+    xxxx.style.display="block"; 
+}
+</script>
+</head>
+<body>
+<div id='gamename' class="start" style="font-weight: bold;font-size: 20px;color:rgb(0, 0, 0);">第二關：十秒內點擊五次紅色</div>
+<svg  width="400" height="100">
+    <circle cx="50" cy="50" r="20"  fill="green" id="x" style="display: block;"onclick="printword()"/>
+    <circle cx="100" cy="50" r="20"  fill="red" id="b" style="display: block;" onclick="win1()"/>
+    <circle cx="150" cy="50" r="20"  fill="green"  id="c"  style="display: block;" onclick="printword()"/>
+    <circle cx="200" cy="50" r="20"  fill="red" style="display: none;"id="d" onclick="win2()"/>
+    <circle cx="250" cy="50" r="20"  fill="green" style="display: none;"id="e" onclick="printword()" />
+    <circle cx="300" cy="50" r="20"  fill="green" style="display: none;"id="f" onclick="printword()"/>
+    
+    <circle cx="50" cy="50" r="20"  fill="red" id="x0" style="display: none;" onclick="win3()"/>
+    <circle cx="100" cy="50" r="20"  fill="green" id="x1" style="display: none;" onclick="printword()"/>
+    <circle cx="250" cy="50" r="20"  fill="green" style="display: none;"id="y1" onclick="printword()" />
+    <circle cx="300" cy="50" r="20"  fill="green" style="display: none;"id="z1" onclick="printword()"/>
+
+    <circle cx="150" cy="50" r="20"  fill="green"  id="xx0"  style="display: block;" onclick="printword()"/>
+    <circle cx="50" cy="50" r="20"  fill="red" style="display: none;"id="xx1" onclick="win4()"/>
+    <circle cx="250" cy="50" r="20"  fill="green" style="display: none;"id="xx2" onclick="printword()" />
+    <circle cx="300" cy="50" r="20"  fill="green" style="display: none;"id="xx3" onclick="printword()"/>
+
+    <circle cx="50" cy="50" r="20"  fill="green" style="display: none;"id="xxx1" onclick="printword()" />
+    <circle cx="390" cy="80" r="5"  fill="red" style="display: none;"id="xxxx" onclick="winf()"/>
+
+ </svg> 
+
+</body>
+</html>

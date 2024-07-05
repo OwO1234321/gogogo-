@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<title>第三關</title>
+<meta charset="utf-8">
+<style>
+    #gamename{
+        background-size: 100px 150px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .start{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: "Times New Roman","標楷體";
+        color:rgb(0, 0, 0);
+        padding-left:/*90px*/15%;
+        padding-top: 9%;
+    }
+    .button {
+        width: 45px;
+        height:27px;
+        padding-left:3px;
+        border:0.5px rgb(0, 0, 0) solid;
+        margin-left:150px;
+        margin-top:3px;
+        background-position: center;
+        font-size:20px;
+        background-color: rgb(184, 184, 184);
+        cursor: pointer;
+    }
+    .button:hover {
+        background-color: aliceblue;
+    }
+    
+    </style>
+      
+    <script>
+    var clock = setTimeout(printword ,8000);
+    function printword(){
+    window.location.href = "loss 02.html";
+    }   
+    function function1(){
+        var R="";
+        R += document.getElementsByName('A1')[0].value;
+        if(R =="132"){window.location.href = "R5.3.html";}
+        else{window.location.href = "loss 02.html";}
+    }
+    </Script>
+    <body>
+    <div id='gamename' class="start" >第三關：速算大考驗(每題限8秒)<!DOCTYPE html>
+    <div id='Q1' style="display: block;font-weight: bold;font-size: 18px;color:rgb(0, 0, 0);padding-left:23%;">Q3. 11+11|11|=?</div>
+    <html lang="en">
+    <input type="text" name="A1" style="padding-left:35%;"required ><br>
+    <body>
+        
+    </body>
+    </html>
+    
+    </div>
+    <div id='Q1' class='button' style="display: block;" onclick="function1()">
+        <a  style="text-decoration:none; color: black;">提交</a>
+    </div>
+    </body>
+    </html>
